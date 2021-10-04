@@ -7,6 +7,7 @@ import Plans from './components/plans/Plans';
 import Shop from './components/shop/Shop';
 import About from './components/about/About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NotFound from './components/not-found/NotFound';
 
 
 
@@ -27,9 +28,9 @@ function App() {
         <Route path="/about">
           <About></About>
         </Route>
-        {/* <Route path="*">
-        <h1>kichu nai</h1>
-        </Route> */}
+        <Route path="*">
+        <NotFound></NotFound>
+        </Route>
       </Switch>
     </Router>
     </div>

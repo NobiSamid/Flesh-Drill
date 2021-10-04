@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Calesthenic Plan",
+      "intro": "Calisthenics or callisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups, such as standing, grasping, pushing, etc.",
+      "image": "https://static.sportzbusiness.com/uploads/2020/04/Athletes.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Body Building",
+      "intro": "Bodybuilding is the use of progressive resistance exercise to control and develop ones muscles by muscle hypertrophy for aesthetic purposes.",
+      "image": "https://p4.wallpaperbetter.com/wallpaper/975/326/544/workout-bodybuilder-wallpaper-preview.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Fitness",
+      "intro": "Keep your body fit and feal a healthy life,To be physically fit you should have: 1) aerobic (cardiovascular) endurance, which is the ability of your heart and lungs to supply oxygen during sustained physical activity; 2) muscular endurance and strength to perform activity without fatigue and with the force needed to do the job",
+      "image": "https://media.gq-magazine.co.uk/photos/5d1391fed7a70123aabba24e/16:9/w_2560%2Cc_limit/James-Bond-hp-GQ-22June15_rex_b.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fat reduce",
+      "intro": "The scientific term for body fat is adipose tissue. ... The amount of essential fat differs between men and women, and is typically around 2-5% in men, and 10-13% in women. The healthy range of body fat for men is typically defined as 8-19%, while the healthy range for women is 21-33%.",
+      "image": "https://i1.wp.com/splitfit.com/wp-content/uploads/2018/03/How-to-lose-belly-fat-839166.jpg?fit=590%2C350&ssl=1"
+    }
+  ]
