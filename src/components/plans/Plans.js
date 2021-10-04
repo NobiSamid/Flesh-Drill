@@ -3,6 +3,7 @@ import { Row } from 'react-bootstrap';
 import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 import Plan from './Plan';
+import './Plans.css';
 
 const Plans = () => {
     const [plans, setPlan] = useState([]);
@@ -14,7 +15,7 @@ const Plans = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Row xs={1} md={2} className="g-4" >
+            <Row xs={1} md={2} className="g-4 planCard" >
                {
                     plans.map(plan=><Plan
                     key={plan.id}

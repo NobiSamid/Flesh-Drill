@@ -52,7 +52,7 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Row xs={1} md={2} className="g-4" >
+            <Row xs={1} md={2} className="g-4 homeCard" >
                {
                     cards.map(card=><Program
                     key={card.id}

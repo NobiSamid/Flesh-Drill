@@ -14,7 +14,7 @@ const Shop = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Row className="g-4">
+            <Row className="g-4 shopCard">
                 {
                     products.map(product=><Product
                     key={product.id}

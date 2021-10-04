@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import "./Product.css";
 
 const Product = (props) => {
@@ -18,6 +18,7 @@ const Product = (props) => {
         <Card.Text>
         Size: {size}
         </Card.Text>
+        <Button>Buy now</Button>
         </div>
         <div>
           <img className='imgEdit' src={image} alt="Thumbnail"></img>
