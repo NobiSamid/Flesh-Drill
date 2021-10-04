@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Carousel, Row } from 'react-bootstrap';
+import { Carousel, Row } from 'react-bootstrap';
 import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 import Program from './Program';
@@ -12,7 +12,6 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setCards(data))
     },[])
-    console.log(cards)
     return (
         <div>
             <NavBar></NavBar>

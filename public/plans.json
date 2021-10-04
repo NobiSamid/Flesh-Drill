@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Upper Body Thenex",
+      "category": "Calesthenic",
+      "intro": "Devlop your Chest, sholder, arms, back and core",
+      "image": "https://uploads-ssl.webflow.com/5f7533fe3ad0a039ce5f1006/5f81ce23840eee6feff8ba96_unnamed-4.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Lower Body Thenex",
+      "category": "Calesthenic",
+      "intro": "Devlop your Glute, Thigh and Culve",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREA2DJ5OCndN9yJ1iacGM6FA5i1EAIEI3Dpw&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "title": "Upper Body Jucing",
+      "category": "Body Building",
+      "intro": "Devlop your Chest, sholder, arms, back and core",
+      "image": "https://i.pinimg.com/564x/30/a4/32/30a432a2e5a8a772abd18941c2597c9a.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Lower Body Jucing",
+      "category": "Body Building",
+      "intro": "Devlop your Glute, Thigh and Culve",
+      "image": "https://i.ytimg.com/vi/wszi-O9goK8/maxresdefault.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Upper Body Fitness",
+      "category": "Fitness",
+      "intro": "Devlop your Chest, sholder, arms, back and core",
+      "image": "https://i.ytimg.com/vi/OS-6ZftY0K4/maxresdefault.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Lower Body Fitness",
+      "category": "Fitness",
+      "intro": "Devlop your Glute, Thigh and Culve",
+      "image": "https://i.pinimg.com/originals/fa/d4/a3/fad4a360531f4ab860427bedaa9bd9cf.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Fire up",
+      "category": "Fat burn",
+      "intro": "Devlop your Chest, sholder, arms, back and core",
+      "image": "https://image.shutterstock.com/shutterstock/photos/259784837/display_1500/stock-photo-fat-man-with-a-big-belly-diet-259784837.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Fire down",
+      "category": "Fat burn",
+      "intro": "Devlop your Glute, Thigh and Culve",
+      "image": "https://image.shutterstock.com/image-photo/fat-guy-jeans-holding-beer-260nw-1052891063.jpg"
+    }
+  ]
