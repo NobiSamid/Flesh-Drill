@@ -1,0 +1,13 @@
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardText {
+    text-align: left;
+}
+
+.imgEdit {
+    height: 200px;
+    width: auto;
+}

@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "title": "Tank Top",
+      "color": "Gray",
+      "gender": "Men",
+      "size": "Small, Medium & large",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2020/9/ID/ZR/DK/27070405/41do1guinsl-500x500.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Joggers",
+      "color": "Black",
+      "gender": "Men",
+      "size": "Small, Medium & large",
+      "image": "https://res.cloudinary.com/webstore/image/fetch/w_450,c_limit,c_fit,f_auto,e_trim/https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1XVFQa2vsK1RjSspdq6AZepXa0%2F2020-Sport-Joggers-Men-Hip-Hop-Harem-Joggers-Pants-Male-Trousers-Men-Joggers-Solid-Multi-pocket.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Gym Shoe",
+      "color": "Black with gray stripes",
+      "gender": "Men",
+      "size": "Small, Medium & large",
+      "image": "https://m.media-amazon.com/images/I/71VU2qhP6HL._AC_UL1500_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Tops",
+      "color": "Black",
+      "gender": "Women",
+      "size": "Small, Medium & large",
+      "image": "https://www.decathlon.com.bd/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/p/1/p1794746.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Leggings",
+      "color": "Pink",
+      "gender": "Women",
+      "size": "Small, Medium & large",
+      "image": "https://img-fs-0.wnlimg.com/p/8b1/3e4/300/ee69fad2fe9f4a5e6a6896c/x354-q80.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Dumbbell",
+      "color": "Black",
+      "gender": "Accessories",
+      "size": "Light, Mediam & Heavy",
+      "image": "https://4.imimg.com/data4/BE/EO/ANDROID-10296850/product-500x500.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Mat",
+      "color": "Black",
+      "gender": "Accessories",
+      "size": "Small, Medium & large",
+      "image": "https://hirakraja.com/3771-large_default/yoga-mats-4mm6mm-8mm.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Towel Robe",
+      "color": "Gray",
+      "gender": "Men & Women",
+      "size": "Small, Medium & large",
+      "image": "https://3.imimg.com/data3/JC/GW/MY-2984447/bath-robe-2-mini-500x500.jpg"
+    }
+  ]
