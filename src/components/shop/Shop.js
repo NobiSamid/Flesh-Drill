@@ -14,7 +14,7 @@ const Shop = () => {
         .then(data=>setProducts(data))
     },[])
     return (
-        <div>
+        <div className="shopbg">
         {/************************* Display Navigation Bar **********************/}
             <NavBar></NavBar>
 

@@ -21,16 +21,16 @@ const NavBar = () => {
                     >
                     {/************************* Router Links **********************/}
                         <Nav.Link >
-                            <Link className="txt" to="/">Home</Link>
+                            <Link className="txtnav" to="/">Home</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link className="txt" to="/plans">Plans</Link>
+                            <Link className="txtnav" to="/plans">Plans</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link className="txt" to="/shop">Shop-now</Link>
+                            <Link className="txtnav" to="/shop">Shop-now</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link className="txt" to="/about">About</Link>
+                            <Link className="txtnav" to="/about">About</Link>
                         </Nav.Link>
                     </Nav>
                     <Form className="d-flex">
@@ -40,7 +40,7 @@ const NavBar = () => {
                         className="me-2"
                         aria-label="Search"
                     />
-                    <Button className="txt" variant="outline-secondary">Search</Button>
+                    <Button className="txtnav" variant="outline-secondary">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

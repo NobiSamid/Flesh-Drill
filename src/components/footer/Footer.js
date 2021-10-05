@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Footer.css";
 
+
+
 //********************************************** Footer Component **************************************//
 const Footer = () => {
     return (
@@ -23,7 +25,7 @@ const Footer = () => {
                 <h6>Contact us</h6>
             </div>
             <div className="element">
-                <h6>You-tube</h6>
+                <h6>Instagram</h6>
             </div>
             <div className="element">
                 <h6>Google Play</h6>

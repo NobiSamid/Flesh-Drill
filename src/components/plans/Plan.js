@@ -10,7 +10,7 @@ const Plan = (props) => {
 
         //************************* Plan single Card **********************//
         <Col>
-            <Card border="light" style={{width:'30rem'}}>
+            <Card className="plansbgcard" border="light" style={{width:'30rem'}}>
                 <Card.Img variant="top" style={{width:'auto', height:'200px'}} src={image}/>
                 <Card.Header>
                     <Card.Title>{title}</Card.Title>

@@ -10,7 +10,7 @@ const Product = (props) => {
     return (
 
       //************************* Shop Product Single Card **********************//
-        <Card>
+        <Card className='productbgcard'>
           <Card.Header as="h5">For {gender}</Card.Header>
           <Card.Body>
             <Card.Title className="cardText">{title}</Card.Title>

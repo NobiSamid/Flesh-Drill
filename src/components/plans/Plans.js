@@ -16,7 +16,7 @@ const Plans = () => {
         .then(data=>setPlan(data))
     },[])
     return (
-        <div>
+        <div className="plansbg">
         {/************************* Display Navigation Bar **********************/}
             <NavBar></NavBar>
 
