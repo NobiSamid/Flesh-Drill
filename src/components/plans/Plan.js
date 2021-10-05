@@ -1,9 +1,14 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
+//********************************************** Plans Page Component **************************************//
 const Plan = (props) => {
+
+    //************************* Plans Data Destructuring **********************//
     const { title, intro, image, category } = props.plan || {};
     return (
+
+        //************************* Plan single Card **********************//
         <Col>
             <Card border="light" style={{width:'30rem'}}>
                 <Card.Img variant="top" style={{width:'auto', height:'200px'}} src={image}/>

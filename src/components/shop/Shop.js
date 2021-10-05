@@ -4,7 +4,9 @@ import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 import Product from './Product';
 
+//********************************************** Shop Now Page **************************************//
 const Shop = () => {
+    //************************* Shop-Now Page Functionality => Fetch data & keep it on state **********************//
     const [products, setProducts] = useState([]);
     useEffect(()=>{
         fetch('./shop.json')
@@ -13,7 +15,10 @@ const Shop = () => {
     },[])
     return (
         <div>
+        {/************************* Display Navigation Bar **********************/}
             <NavBar></NavBar>
+
+            {/************************* Shop Now Product Cards **********************/}
             <Row className="g-4 shopCard">
                 {
                     products.map(product=><Product
@@ -22,6 +27,8 @@ const Shop = () => {
                     ></Product>)
                 }
             </Row>
+
+            {/************************* Display Footer **********************/}
             <Footer></Footer>
         </div>
     );

@@ -5,16 +5,23 @@ import NavBar from '../navBar/NavBar';
 import Program from './Program';
 import './Home.css';
 
+//********************************************** Home page **************************************//
 const Home = () => {
+
+        ///////////////////////// Home Card Functionality => Fatch data & keep it on state ////////////////////
     const [cards, setCards] = useState ([]);
     useEffect(()=>{
         fetch('./home.json')
         .then(res=>res.json())
         .then(data=>setCards(data))
     },[])
+
     return (
         <div>
+        {/************************* Display Navigation Bar **********************/}
             <NavBar></NavBar>
+
+            {/************************* Display Banner Slider **********************/}
             <Carousel fade variant="dark">
                 <Carousel.Item interval={2000}>
                     <img
@@ -33,7 +40,6 @@ const Home = () => {
                     src="https://media.gq-magazine.co.uk/photos/5d1391fed7a70123aabba24e/16:9/w_2560%2Cc_limit/James-Bond-hp-GQ-22June15_rex_b.jpg"
                     alt="Second slide"
                     />
-
                     <Carousel.Caption>
                     <h3>Beach Body</h3>
                     <p>Feel good and get results with easy-to-follow dance moves, resistance training, and a moment of INSANITY-style fitness.</p>
@@ -45,13 +51,14 @@ const Home = () => {
                     src="https://p4.wallpaperbetter.com/wallpaper/975/326/544/workout-bodybuilder-wallpaper-preview.jpg"
                     alt="Third slide"
                     />
-
                     <Carousel.Caption>
                     <h3>Body Building</h3>
                     <p>Bodybuilding is the use of progressive resistance exercise to control and develop one's muscles by muscle hypertrophy for aesthetic purposes.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+
+            {/************************* Display Home Card Components **********************/}
             <Row xs={1} md={2} className="g-4 homeCard" >
                {
                     cards.map(card=><Program
@@ -60,6 +67,8 @@ const Home = () => {
                     ></Program>)
                 }
             </Row>
+
+            {/************************* Display Footer **********************/}
             <Footer></Footer>
         </div>
     );

@@ -12,6 +12,7 @@ import NotFound from './components/not-found/NotFound';
 function App() {
   return (
     <div className="App">
+    {/*******************  Router Set-up ***************/}
     <Router>
       <Switch>
         <Route exact path="/">
