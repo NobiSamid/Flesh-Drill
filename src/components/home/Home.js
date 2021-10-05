@@ -30,8 +30,8 @@ const Home = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>Calesthenics</h3>
-                    <p>Calisthenics or callisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups, such as standing, grasping, pushing, etc.</p>
+                    <h3 className="animate__animated animate__zoomIn">Calesthenics</h3>
+                    <p className="animate__animated animate__zoomInDown">Calisthenics or callisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups, such as standing, grasping, pushing, etc.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -41,8 +41,8 @@ const Home = () => {
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3>Beach Body</h3>
-                    <p>Feel good and get results with easy-to-follow dance moves, resistance training, and a moment of INSANITY-style fitness.</p>
+                    <h3 className="animate__animated animate__zoomIn">Beach Body</h3>
+                    <p className="animate__animated animate__zoomInDown">Feel good and get results with easy-to-follow dance moves, resistance training, and a moment of INSANITY-style fitness.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -52,8 +52,8 @@ const Home = () => {
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3>Body Building</h3>
-                    <p>Bodybuilding is the use of progressive resistance exercise to control and develop one's muscles by muscle hypertrophy for aesthetic purposes.</p>
+                    <h3 className="animate__animated animate__zoomIn">Body Building</h3>
+                    <p className="animate__animated animate__zoomInDown">Bodybuilding is the use of progressive resistance exercise to control and develop one's muscles by muscle hypertrophy for aesthetic purposes.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

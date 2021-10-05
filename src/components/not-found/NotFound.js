@@ -10,9 +10,11 @@ const NotFound = () => {
             </div>
             <div className='float'>
                 <h1 className="page">Page not found</h1>
-                <button>
-                    <Link className="btntxt" to="/">Go to home page</Link>
-                </button>
+                <Link to="/">
+                    <button>
+                        <a href="/" className="btntxt">Go to home page</a>
+                    </button>
+                </Link>
             </div>
         </div>
     );

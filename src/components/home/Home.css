@@ -8,3 +8,7 @@
     padding-left: 8%;
     justify-content: center;
 }
+
+.animate__animated.animate__zoomInDown {
+    --animate-duration: 1.5s;
+}
