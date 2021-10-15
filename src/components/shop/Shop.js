@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import Footer from '../footer/Footer';
-import NavBar from '../navBar/NavBar';
 import Product from './Product';
 
 //********************************************** Shop Now Page **************************************//
@@ -15,8 +13,6 @@ const Shop = () => {
     },[])
     return (
         <div className="shopbg">
-        {/************************* Display Navigation Bar **********************/}
-            <NavBar></NavBar>
 
             {/************************* Shop Now Product Cards **********************/}
             <Row className="g-4 shopCard">
@@ -28,8 +24,6 @@ const Shop = () => {
                 }
             </Row>
 
-            {/************************* Display Footer **********************/}
-            <Footer></Footer>
         </div>
     );
 };

@@ -27,7 +27,7 @@ const Program = (props) => {
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{intro}</Card.Text>
                     <Link to={`/programs/${id}`}>
-                        <Button className="btn btn-secondary" onClick={handleGetPlans}>Get Plans</Button>
+                        <Button variant="btn btn-secondary" onClick={handleGetPlans}>Get Plans</Button>
                     </Link>
                 </Card.Header>
             </Card>

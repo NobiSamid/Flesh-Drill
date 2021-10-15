@@ -1,26 +1,37 @@
 import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import Footer from '../footer/Footer';
-import NavBar from '../navBar/NavBar';
+import Detail from './Detail';
 
 const PlanDetails = () => {
     const {programKey} = useParams();
-    // const [planDetails, setPlanDetails] = useState([]);
-    //  useEffect(()=>{
-    //     fetch('./plansort.json')
-    //     .then(res=>res.json())
-    //     .then(data=>console.log(data))
-    // },[])
+    const [planDetails, setPlanDetails] = useState([]);
+     useEffect(()=>{
+        fetch('https://raw.githubusercontent.com/NobiSamid/Flesh-Drill/main/public/plansort.json')
+        .then(res=>res.json())
+        .then(data=>setPlanDetails(data))
+    },[])
 
     // console.log(planDetails);
 
+    const index = programKey - 1;
+    // console.log(planDetails[index]?.plans);
+    const detailsOf = planDetails[index]?.plans ;
+    // console.log(detailsOf);
+    detailsOf?.map(d=>console.log(d));
 
 
     return (
         <div>
-            <NavBar></NavBar>
             <h1>Hello there this is plan details of {programKey} number</h1>
-            <Footer></Footer>
+            <Row xs={1} md={2} className="g-4 planCard" >
+               {
+                    detailsOf?.map(detail=><Detail
+                    key={detail.id}
+                    detail={detail}
+                    ></Detail>)
+                }
+            </Row>
         </div>
     );
 };

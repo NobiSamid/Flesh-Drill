@@ -1,15 +1,10 @@
 import React from 'react';
-import Footer from '../footer/Footer';
-import NavBar from '../navBar/NavBar';
 import "./About.css"
 
 //********************************************** About Us Page **************************************//
 const About = () => {
     return (
         <div>
-
-        {/************************* Display Navigation Bar **********************/}
-            <NavBar></NavBar>
 
             {/************************* Aboyut us => Mission part **********************/}
             <div className="mission">
@@ -66,9 +61,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-            {/************************* Display Footer **********************/}   
-            <Footer></Footer>
         </div>
     );
 };

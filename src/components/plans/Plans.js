@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import Footer from '../footer/Footer';
-import NavBar from '../navBar/NavBar';
 import Plan from './Plan';
 import './Plans.css';
 
@@ -17,8 +15,6 @@ const Plans = () => {
     },[])
     return (
         <div className="plansbg">
-        {/************************* Display Navigation Bar **********************/}
-            <NavBar></NavBar>
 
             {/************************* Plan Cards **********************/}
             <Row xs={1} md={2} className="g-4 planCard" >
@@ -30,8 +26,6 @@ const Plans = () => {
                 }
             </Row>
 
-            {/************************* Display Footer **********************/}
-            <Footer></Footer>
         </div>
     );
 };

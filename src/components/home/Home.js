@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel, Row } from 'react-bootstrap';
-import Footer from '../footer/Footer';
-import NavBar from '../navBar/NavBar';
 import Program from './Program';
 import './Home.css';
 
@@ -19,8 +17,6 @@ const Home = () => {
 
     return (
         <div className="homeBody">
-        {/************************* Display Navigation Bar **********************/}
-            <NavBar></NavBar>
 
             {/************************* Display Banner Slider **********************/}
             <Carousel fade variant="dark">
@@ -60,7 +56,7 @@ const Home = () => {
             </Carousel>
 
             {/************************* Display Home Card Components **********************/}
-            <Row xs={1} md={2} className="g-4 homeCard" >
+            <Row id="programs" xs={1} md={2} className="g-4 homeCard" >
                {
                     cards.map(card=><Program
                     key={card.id}
@@ -69,8 +65,6 @@ const Home = () => {
                 }
             </Row>
 
-            {/************************* Display Footer **********************/}
-            <Footer></Footer>
         </div>
     );
 };
