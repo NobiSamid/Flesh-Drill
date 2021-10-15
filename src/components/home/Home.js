@@ -15,6 +15,7 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setCards(data))
     },[])
+    // console.log(cards)
 
     return (
         <div className="homeBody">

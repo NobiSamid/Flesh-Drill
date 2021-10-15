@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import "./Plans.css"
 
 //********************************************** Plans Page Component **************************************//
 const Plan = (props) => {

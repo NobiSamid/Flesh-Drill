@@ -1,9 +1,9 @@
 .plansbg {
-    background-image: url('./bgp.jpg');
+    /* background-image: url('./bgp.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .planCard {

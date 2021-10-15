@@ -1,9 +1,9 @@
 .homeBody {
-    background-image: url('./bgr.jpg');
+    /* background-image: url('./bgr.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .heading {

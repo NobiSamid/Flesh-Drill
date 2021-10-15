@@ -1,12 +1,22 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import "./Home.css"
 
 //********************************************** Home page component **************************************//
 const Program = (props) => {
 
     //************************* Destructuring Home card components **********************//
-    const { title, intro, image} = props.card || {};
+    const { title, intro, image, id} = props.card || {};
+    const history = useHistory();
+    // const url = `plans/${id}`;
+    const handleGetPlans = () =>{
+        history.push(`/programs/${id}`)
+    }
+
+
+
     return (
 
         //************************* Display Home single Card **********************//
@@ -16,6 +26,9 @@ const Program = (props) => {
                 <Card.Header>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{intro}</Card.Text>
+                    <Link to={`/programs/${id}`}>
+                        <Button className="btn btn-secondary" onClick={handleGetPlans}>Get Plans</Button>
+                    </Link>
                 </Card.Header>
             </Card>
         </Col>
