@@ -12,6 +12,7 @@ import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Login/privateRoute/PrivateRoute';
+// import Register from './Login/Register';
 
 
 
@@ -29,18 +30,21 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            {/* <Route path="/register">
+              <Register></Register>
+            </Route> */}
             <PrivateRoute path="/programs/:programKey">
               <PlanDetails></PlanDetails>
             </PrivateRoute>
-            <Route path="/plans">
+            <PrivateRoute path="/plans">
               <Plans></Plans>
-            </Route>
-            <Route path="/shop">
+            </PrivateRoute>
+            <PrivateRoute path="/shop">
               <Shop></Shop>
-            </Route>
-            <Route path="/about">
+            </PrivateRoute>
+            <PrivateRoute path="/about">
               <About></About>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
             <NotFound></NotFound>
             </Route>

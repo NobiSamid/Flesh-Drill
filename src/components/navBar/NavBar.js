@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import "./NavBar.css";
