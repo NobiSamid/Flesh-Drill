@@ -11,6 +11,7 @@ import Login from './Login/Login';
 import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Login/privateRoute/PrivateRoute';
 
 
 
@@ -28,9 +29,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/programs/:programKey">
+            <PrivateRoute path="/programs/:programKey">
               <PlanDetails></PlanDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="/plans">
               <Plans></Plans>
             </Route>
