@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, updateProfile } from '@firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router';
 import initializeAuthentication from '../Firebase/firebase.init';
 import useAuth from '../hooks/useAuth';
 
@@ -10,6 +11,11 @@ const Login = () => {
     const { signInUsingGoogle } = useAuth();
 
     const auth = getAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home'
+    console.log('came from', location.state?.from)
 
 
     const [email, setEmail] = useState('');
@@ -129,6 +135,14 @@ const Login = () => {
         // })
     }
 
+    // Redirect funtionality
+    const handleGoogleLogin = () =>{
+        signInUsingGoogle()
+        .then(result =>{
+            history.push(redirect_uri);
+        })
+    }
+
     return (
         <div>
             <h2>Please {isLogin ? "Log-in" : "Register"}</h2>
@@ -156,7 +170,8 @@ const Login = () => {
                 </Button>
             </Form><br/><br/>
             {/* <p> New to Flesh Drill ? <Link to="/register">Create Account</Link></p> */}
-            <Button onClick={signInUsingGoogle} variant="btn btn-warning">Google Sign-in</Button>
+            <Button onClick={handleGoogleLogin} variant="btn btn-warning">Google Sign-in</Button>
+            {/* <Button onClick={signInUsingGoogle} variant="btn btn-warning">Google Sign-in</Button> */}
         </div>
     );
 };
