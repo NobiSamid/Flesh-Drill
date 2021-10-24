@@ -1,0 +1,10 @@
+.add-plans form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-plans form input,.add-plans form textarea{
+    margin-bottom: 10px;
+    width: 50%;
+}

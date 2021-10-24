@@ -12,6 +12,9 @@ import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Login/privateRoute/PrivateRoute';
+import AddPlans from './components/addplans/AddPlans';
+import Roll from './components/plans/Roll';
+import ManagePlans from './components/manage/ManagePlans';
 // import Register from './Login/Register';
 
 
@@ -36,8 +39,11 @@ function App() {
             <PrivateRoute path="/programs/:programKey">
               <PlanDetails></PlanDetails>
             </PrivateRoute>
-            <PrivateRoute path="/plans">
+            <PrivateRoute exact path="/plans">
               <Plans></Plans>
+            </PrivateRoute>
+            <PrivateRoute exact path="/plans/:planId">
+              <Roll></Roll>
             </PrivateRoute>
             <PrivateRoute path="/shop">
               <Shop></Shop>
@@ -45,6 +51,12 @@ function App() {
             <PrivateRoute path="/about">
               <About></About>
             </PrivateRoute>
+            <Route path="/addPlan">
+              <AddPlans></AddPlans>
+            </Route>
+            <Route path="/manageplans">
+              <ManagePlans></ManagePlans>
+            </Route>
             <Route path="*">
             <NotFound></NotFound>
             </Route>

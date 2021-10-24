@@ -9,7 +9,7 @@ const Plans = () => {
     //************************* Plans Functionality => Fetch data of Plans and keep it on state **********************//
     const [plans, setPlan] = useState([]);
     useEffect(()=>{
-        fetch('./plans.json')
+        fetch('http://localhost:5000/plans')
         .then(res=>res.json())
         .then(data=>setPlan(data))
     },[])
@@ -20,7 +20,7 @@ const Plans = () => {
             <Row xs={1} md={2} className="g-4 planCard" >
                {
                     plans.map(plan=><Plan
-                    key={plan.id}
+                    key={plan._id}
                     plan={plan}
                     ></Plan>)
                 }
